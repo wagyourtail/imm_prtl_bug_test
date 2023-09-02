@@ -2,25 +2,29 @@
   "schemaVersion": 1,
   "id": "imm_prtl_bugs",
   "version": "${version}",
-
   "name": "imm_prtl_bugs",
   "description": "",
   "authors": [],
-  "contact": {},
-
+  "contact": {
+    "repo": "https://github.com/william/imm_prtl_bugs"
+  },
   "license": "MIT",
   "icon": "assets/imm_prtl_bugs/icon.png",
-
   "environment": "*",
-  "entrypoints": {},
-
-      "mixins": [
-        "imm_prtl_bugs.mixins.json"
-      ],
-
+  "entrypoints": {
+    "client": [
+      "xyz.wagyourtail.imm_prtl_bugs.client.Imm_prtl_bugsClient"
+    ],
+    "main": [
+      "xyz.wagyourtail.imm_prtl_bugs.Imm_prtl_bugs"
+    ]
+  },
+  "mixins": [
+    "imm_prtl_bugs.mixins.json"
+  ],
   "depends": {
     "fabricloader": ">=${loader_version}",
-        "fabric": "*",
+    "fabric": "*",
     "minecraft": "${minecraft_version}"
   }
 }
